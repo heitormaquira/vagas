@@ -22,7 +22,7 @@
 body {
     font-size: 1.7rem;
     font-family: 'Merriweather Sans', sans-serif;
-    background: #ffffff;
+    background: #f8f8f8;
     color: #929292;
     display: flex;
     flex-direction: column;
@@ -38,20 +38,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     
 }
 
 .card__container {
     padding-block: 5rem;
     overflow: hidden;
-    padding: 4.35rem;
+    padding: 0.3rem;
 }
 
 .card__article {
     background-color: var(--first-color);
-    padding: 0.8rem;
-    border-radius: 1.52rem;
+    padding: 0.6rem;
+    border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ a {
 
 
 .card__name {
-    font-size: 20px;
+    font-size: 18px;
     color: #0000a0;
     text-align: left;
     margin-top: 0rem;
@@ -75,9 +75,9 @@ a {
 .card__description {
     font-size: var(--normal-font-size);
     text-align: left;
-    margin: 0.5rem 0;
+    margin: 0.3rem;
     color: var(--second-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .card__button {
@@ -87,8 +87,8 @@ a {
     border-radius: 1.8rem;
     display: inline-block;
     text-align: left;
-    font-size: 16px;
-    width: 45%;
+    font-size: 15px;
+    width: 50%;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     margin: left; /* Centraliza o botão */
     font-weight: bold
@@ -148,7 +148,7 @@ a {
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    transform: scale(1.2); /* Efeito de escala ao passar o mouse */
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
 }
 
 .swiper-pagination-bullet {
