@@ -21,8 +21,6 @@
     <section class="container">
         <div class="card__container swiper">
             <div class="swiper-wrapper">
-
-                <!-- Cartões individuais do carrossel -->
                 <article class="card__article swiper-slide">
                     <h2 class="card__name">Analista de algo</h2>
                     <p class="card__description">[Maringa] Este é um curso de introdução ao assunto.</p>
@@ -30,7 +28,7 @@
                 </article>
 
                 <article class="card__article swiper-slide">
-                    <h2 class="card__name">Auxliar de produção</h2>
+                    <h2 class="card__name">Auxiliar de produção</h2>
                     <p class="card__description">[Maringa] Este é um curso de introdução ao assunto.</p>
                     <a href="https://maquira.com.br" class="card__button" target="_blank">Saiba mais</a>
                 </article>
@@ -46,9 +44,6 @@
                     <p class="card__description">[Maringa] Este é um curso de introdução ao assunto.</p>
                     <a href="https://maquira.com.br" class="card__button" target="_blank">Saiba mais</a>
                 </article>
-
-                <!-- Adicione mais cartões conforme necessário -->
-
             </div>
 
             <!-- Botões de navegação -->
@@ -69,20 +64,19 @@
 
     <!--=============== MAIN JS ===============-->
     <script>
-        // Configuração do Swiper
         var swiper = new Swiper(".swiper", {
-            slidesPerView: 3, // Exibir 4 colunas
-            spaceBetween: 32, // Espaço entre os slides
-            loop: true, // Loop contínuo
+            slidesPerView: 3, // Agora mostrando 3 slides por vez
+            spaceBetween: 32,
+            loop: true,
             autoplay: {
-                delay: 7000, // Autoplay a cada 5 segundos
-                disableOnInteraction: false, // Continuar autoplay mesmo após interação
+                delay: 7000,
+                disableOnInteraction: false,
             },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            speed: 800, // Transição suave
+            speed: 800,
             breakpoints: {
                 0: {
                     slidesPerView: 1,
@@ -93,25 +87,10 @@
                     spaceBetween: 20,
                 },
                 1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 3, // Alterado de 4 para 3
                     spaceBetween: 32,
                 }
             }
-        });
-
-        // Efeito de hover nos botões de navegação
-        document.querySelector('.swiper-button-next').addEventListener('mouseenter', function () {
-            this.style.color = 'FFFFFF';
-        });
-        document.querySelector('.swiper-button-next').addEventListener('mouseleave', function () {
-            this.style.color = '';
-        });
-
-        document.querySelector('.swiper-button-prev').addEventListener('mouseenter', function () {
-            this.style.color = 'FFFFFF';
-        });
-        document.querySelector('.swiper-button-prev').addEventListener('mouseleave', function () {
-            this.style.color = '';
         });
     </script>
 </body>
